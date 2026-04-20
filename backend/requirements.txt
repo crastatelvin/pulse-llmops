@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+groq
+python-dotenv
+aiosqlite
+pydantic
+pydantic-settings
+httpx
+pytest

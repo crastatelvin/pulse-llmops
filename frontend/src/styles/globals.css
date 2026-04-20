@@ -1,0 +1,65 @@
+:root {
+  --bg: #040808;
+  --bg-card: #0a1212;
+  --teal: #00d4aa;
+  --text: #d2e0e0;
+  --muted: #749090;
+  --red: #ff4560;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Source Code Pro", Consolas, monospace;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 212, 170, 0.15);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  font-size: 12px;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid rgba(0, 212, 170, 0.1);
+}
+
+@media (max-width: 900px) {
+  .kpi-grid,
+  .two-grid {
+    grid-template-columns: 1fr;
+  }
+}
