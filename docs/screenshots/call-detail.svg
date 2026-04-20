@@ -1,0 +1,36 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#050b0b"/>
+  <text x="40" y="52" fill="#d2e0e0" font-family="Segoe UI, Arial" font-size="30" font-weight="700">PULSE LLMOps</text>
+  <text x="40" y="86" fill="#7c9c9c" font-family="Consolas, monospace" font-size="14">Call Detail Inspector</text>
+
+  <rect x="36" y="110" width="1208" height="104" rx="8" fill="#0b1515" stroke="#1a3d3d"/>
+  <text x="54" y="140" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">MODEL</text>
+  <text x="54" y="170" fill="#00d4aa" font-family="Consolas, monospace" font-size="16">llama-3.1-8b-instant</text>
+  <text x="360" y="140" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">LATENCY</text>
+  <text x="360" y="170" fill="#d2e0e0" font-family="Consolas, monospace" font-size="16">494.41ms</text>
+  <text x="550" y="140" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">TOKENS</text>
+  <text x="550" y="170" fill="#d2e0e0" font-family="Consolas, monospace" font-size="16">191</text>
+  <text x="700" y="140" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">EST. COST</text>
+  <text x="700" y="170" fill="#d2e0e0" font-family="Consolas, monospace" font-size="16">$0.00008</text>
+  <text x="910" y="140" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">STATUS</text>
+  <text x="910" y="170" fill="#5de7c4" font-family="Consolas, monospace" font-size="16">SUCCESS</text>
+
+  <rect x="36" y="232" width="588" height="430" rx="8" fill="#0b1515" stroke="#1a3d3d"/>
+  <text x="54" y="260" fill="#cfe3e3" font-family="Consolas, monospace" font-size="14">Prompt</text>
+  <text x="54" y="292" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">Customer says login link expired immediately after receiving it.</text>
+  <text x="54" y="320" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">Help draft a concise support response.</text>
+
+  <rect x="656" y="232" width="588" height="430" rx="8" fill="#0b1515" stroke="#1a3d3d"/>
+  <text x="674" y="260" fill="#cfe3e3" font-family="Consolas, monospace" font-size="14">Response</text>
+  <text x="674" y="292" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">Hi [Customer Name], sorry that happened. I generated a new login link</text>
+  <text x="674" y="320" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">for your account. Please try again within 15 minutes and let us know</text>
+  <text x="674" y="348" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">if the issue persists so we can investigate immediately.</text>
+
+  <rect x="54" y="560" width="550" height="84" rx="8" fill="#0f1b1b" stroke="#234646"/>
+  <text x="72" y="590" fill="#7c9c9c" font-family="Consolas, monospace" font-size="12">metadata.source_app</text>
+  <text x="72" y="618" fill="#00d4aa" font-family="Consolas, monospace" font-size="14">support-bot-demo</text>
+
+  <rect x="674" y="560" width="550" height="84" rx="8" fill="#0f1b1b" stroke="#234646"/>
+  <text x="692" y="590" fill="#7c9c9c" font-family="Consolas, monospace" font-size="12">timestamp</text>
+  <text x="692" y="618" fill="#d2e0e0" font-family="Consolas, monospace" font-size="14">2026-04-20T11:55:40.534301+00:00</text>
+</svg>

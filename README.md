@@ -27,6 +27,7 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [Application Preview](#-application-preview)
 - [Features](#-features)
 - [Architecture](#-architecture)
 - [Tech Stack](#-tech-stack)
@@ -51,6 +52,23 @@ PULSE is built for teams shipping AI features who need to answer operational que
 - Which sessions had poor prompt quality or high hallucination risk?
 
 Instead of treating AI calls as opaque events, PULSE turns them into structured telemetry. Every call is persisted, scored, aggregated, and surfaced in a dense operations dashboard.
+
+---
+
+## 🖼️ Application Preview
+
+<div align="center">
+
+### Dashboard Overview
+![Dashboard Overview](docs/screenshots/dashboard-overview.svg)
+
+### One-Click Demo Run
+![Demo Run](docs/screenshots/demo-run.svg)
+
+### Call Detail Inspector
+![Call Detail](docs/screenshots/call-detail.svg)
+
+</div>
 
 ---
 
@@ -264,6 +282,15 @@ venv\Scripts\python -m pytest -q
 cd ../frontend
 npm run build
 ```
+
+---
+
+## ☁️ Deployment
+
+- Backend (Render): use `render.yaml` at repo root and set `GROQ_API_KEY` / `API_KEY` in Render secrets.
+- Frontend (Vercel): deploy `frontend/` and set:
+  - `REACT_APP_API_URL=https://<your-render-backend>.onrender.com`
+  - `REACT_APP_WS_URL=wss://<your-render-backend>.onrender.com/ws`
 
 ---
 

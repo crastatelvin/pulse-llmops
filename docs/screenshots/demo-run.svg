@@ -1,0 +1,31 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#050b0b"/>
+  <text x="40" y="52" fill="#d2e0e0" font-family="Segoe UI, Arial" font-size="30" font-weight="700">PULSE LLMOps</text>
+  <rect x="930" y="20" rx="8" ry="8" width="210" height="42" fill="#00d4aa"/>
+  <text x="967" y="47" fill="#07221d" font-family="Segoe UI, Arial" font-size="16" font-weight="700">Run Demo Tickets</text>
+  <rect x="1150" y="26" rx="12" ry="12" width="96" height="30" fill="#072f27" stroke="#00d4aa"/>
+  <text x="1181" y="46" fill="#00d4aa" font-family="Consolas, monospace" font-size="14">LIVE</text>
+
+  <rect x="36" y="88" width="1208" height="60" rx="8" fill="#0d211b" stroke="#1f694f"/>
+  <text x="58" y="125" fill="#74eecb" font-family="Consolas, monospace" font-size="15">Demo completed: 3/3 calls succeeded (support-demo-1776666481)</text>
+
+  <rect x="36" y="170" width="1208" height="514" rx="8" fill="#0b1515" stroke="#1a3d3d"/>
+  <text x="58" y="202" fill="#cfe3e3" font-family="Consolas, monospace" font-size="14">Recent Calls (Demo Session)</text>
+  <text x="58" y="236" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">ID   SESSION                    LATENCY    TOKENS    STATUS    PREVIEW</text>
+  <text x="58" y="272" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">#12  support-demo-1776666481    1319ms     207       OK        login link expired response draft...</text>
+  <text x="58" y="304" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">#11  support-demo-1776666481    810ms      253       OK        invoice mismatch detail request...</text>
+  <text x="58" y="336" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">#10  support-demo-1776666481    929ms      355       OK        enterprise ETA incident update...</text>
+
+  <rect x="58" y="374" width="560" height="270" rx="8" fill="#0e1a1a" stroke="#1b4b4b"/>
+  <text x="76" y="402" fill="#cfe3e3" font-family="Consolas, monospace" font-size="14">Demo Metrics Delta</text>
+  <text x="76" y="436" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">Total Calls +3</text>
+  <text x="76" y="464" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">Avg Latency updated</text>
+  <text x="76" y="492" fill="#7c9c9c" font-family="Consolas, monospace" font-size="13">Token usage trend increased</text>
+  <polyline points="80,610 160,590 240,600 320,560 400,575 480,520 600,505" fill="none" stroke="#00d4aa" stroke-width="3"/>
+
+  <rect x="646" y="374" width="578" height="270" rx="8" fill="#0e1a1a" stroke="#1b4b4b"/>
+  <text x="664" y="402" fill="#cfe3e3" font-family="Consolas, monospace" font-size="14">Operational Signals</text>
+  <text x="664" y="436" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">Demo run succeeded without errors</text>
+  <text x="664" y="466" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">Calls broadcast over WebSocket in near real-time</text>
+  <text x="664" y="496" fill="#d2e0e0" font-family="Consolas, monospace" font-size="13">External app simulation flow validated end-to-end</text>
+</svg>
