@@ -1,23 +1,24 @@
 <div align="center">
 
-# 📡 PULSE LLMOps
+# 📊 PULSE LLMOps
 
-### Real-Time LLMOps Monitoring and Observability Platform
+### Production-Ready LLM Observability Dashboard — Track Latency, Cost, Tokens, Errors, and Live Call Streams
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.136%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Groq](https://img.shields.io/badge/Groq-LLM_API-000000?style=for-the-badge)](https://groq.com/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Recharts](https://img.shields.io/badge/Recharts-2.x-ff6b6b?style=for-the-badge)](https://recharts.org/en-US/)
+[![Groq](https://img.shields.io/badge/Groq-llama--3.1--8b--instant-F55036?style=for-the-badge)](https://groq.com/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
 <br/>
 
-> **PULSE LLMOps** is a full-stack observability dashboard for production AI workloads. It captures and stores every LLM call, computes latency/token/cost/error metrics, pushes live updates over WebSockets, and helps teams quickly detect quality and reliability issues.
+> **PULSE LLMOps** is a full-stack observability platform for AI workloads. It captures every LLM call (live playground calls or tracked external app traffic), computes latency/token/cost/error metrics, stores full request-response traces, streams updates over WebSockets, and visualizes operations in a real-time dashboard.
 
 <br/>
 
-![Live Metrics](https://img.shields.io/badge/Live-KPI%20Dashboard-blue?style=for-the-badge) ![Telemetry Ingestion](https://img.shields.io/badge/Track-External%20App%20Calls-orange?style=for-the-badge) ![Alerts](https://img.shields.io/badge/Threshold-Alert%20Engine-red?style=for-the-badge)
+![Live Dashboard](https://img.shields.io/badge/Mode-Live_WebSocket_Updates-5aa6ff?style=for-the-badge) ![Security](https://img.shields.io/badge/Security-API_Key_+_Rate_Limit-b189ff?style=for-the-badge) ![Demo Ready](https://img.shields.io/badge/Demo-One_Click_Support_Tickets-41c77a?style=for-the-badge)
 
 </div>
 
@@ -33,6 +34,7 @@
 - [Project Structure](#-project-structure)
 - [Installation](#-installation)
 - [Usage](#-usage)
+- [Example App Demonstration](#-example-app-demonstration)
 - [API Reference](#-api-reference)
 - [Configuration](#-configuration)
 - [Testing](#-testing)
@@ -42,54 +44,48 @@
 
 ## 🧠 Overview
 
-PULSE is built for teams running LLM-powered features in real products.
+PULSE is built for teams shipping AI features who need to answer operational questions quickly:
 
-It answers core production questions in seconds:
-
-- Are responses slowing down?
-- Which model or endpoint is driving cost?
+- Why are responses getting slower?
+- Which model is costing more?
 - How often are calls failing?
-- Which sessions need deeper trace-level debugging?
+- Which sessions had poor prompt quality or high hallucination risk?
 
-Instead of treating AI calls as opaque events, PULSE turns every request into structured telemetry and live operational intelligence.
+Instead of treating AI calls as opaque events, PULSE turns them into structured telemetry. Every call is persisted, scored, aggregated, and surfaced in a dense operations dashboard.
 
 ---
 
-## 💻 Application Preview
-<br/>
-<br/>
-<img width="1365" height="643" alt="{82DD1B1B-6CB3-492D-9A39-081EFE80EBE9}" src="https://github.com/user-attachments/assets/1a606b34-06b4-483f-b568-9190da410f67" />
-<br/>
-<br/>
-<img width="1366" height="640" alt="{35E76ADA-0EA2-4D95-8B34-658FE56A2945}" src="https://github.com/user-attachments/assets/2237e21e-532f-4c22-add4-887f74867906" />
-<br/>
-<br/>
-<img width="1366" height="642" alt="{576061B8-32EF-4D9E-8E34-FB7D7137E7AA}" src="https://github.com/user-attachments/assets/b6ed4243-e554-4b72-b62d-1d779d78f5d9" />
-<br/>
-<br/>
-<img width="1366" height="639" alt="{21EFAE31-4DAE-490F-86FD-AE6DC1A60BC4}" src="https://github.com/user-attachments/assets/b2a68731-7052-45bf-acbb-aba4c757bb1c" />
-<br/>
-<br/>
-<img width="1366" height="636" alt="{36D5E71C-D97B-4C8D-AE96-E63EB77B8FC4}" src="https://github.com/user-attachments/assets/d914c724-becb-4bbc-9906-f1aa541afcdd" />
-<br/>
-<br/>
-<img width="1361" height="639" alt="{83F067E6-244D-4728-A7E3-3DB3B9C1F2BC}" src="https://github.com/user-attachments/assets/5fc26acc-ee0a-432c-a17e-067dafa1ba05" />
-<br/>
-<br/>
+## 🖼️ Application Preview
+
+<div align="center">
+
+### Dashboard Overview
+![Dashboard Overview](docs/screenshots/dashboard-overview.svg)
+
+### One-Click Demo Run
+![Demo Run](docs/screenshots/demo-run.svg)
+
+### Call Detail Inspector
+![Call Detail](docs/screenshots/call-detail.svg)
+
+</div>
+
+---
 
 ## ✨ Features
 
 | Feature | Description |
 |---|---|
-| 📈 **Live KPI Dashboard** | Real-time total calls, avg latency, token usage, error rate, and estimated cost |
-| 📊 **Time-Series Analytics** | Persisted trends for latency and token volume over time |
-| 🧾 **Trace Log & Call Inspector** | View prompt, response, model, latency, tokens, status, and metadata per call |
-| 🚨 **Alert Engine** | Trigger alerts on latency spikes, high error rates, and daily cost thresholds |
-| ▶️ **Playground Calls** | Send direct prompts from the app and track them like first-class production calls |
-| 🔌 **External App Tracking** | Ingest telemetry from any app through `POST /track` |
-| 🔄 **WebSocket Streaming** | Pushes new call and alert updates to the dashboard live |
-| 🔐 **Security Layer** | Optional API-key auth plus in-memory per-IP rate limiting |
-| 🐳 **Deployment Ready** | Dockerfiles, docker-compose, and CI workflow included |
+| 📈 **Live KPI Dashboard** | Total calls, error rate, average latency, and estimated cost in real time |
+| 📊 **Timeseries Charts** | Latency and token trends from persisted call history |
+| 🧾 **Call Trace Log** | Prompt, response, model, status, latency, and token details per call |
+| 🚨 **Alert Engine** | Threshold alerts for latency spikes, failures, and accumulated cost |
+| ▶️ **Playground Calls** | Run direct model prompts from API and track as first-class telemetry |
+| 🔌 **External App Tracking** | Any app can send telemetry to `POST /track` |
+| 🧪 **One-Click Demo Tickets** | Dashboard button runs a realistic support-ticket workload |
+| 🔐 **Phase-2 Security** | API-key auth + per-IP in-memory rate limiting |
+| 🐳 **Deployment Ready** | Dockerfiles + `docker-compose.yml` included |
+| ✅ **CI Pipeline** | GitHub Actions runs backend tests and frontend production build |
 
 ---
 
@@ -106,7 +102,7 @@ Instead of treating AI calls as opaque events, PULSE turns every request into st
 │                                                             │
 │  /track         ingest external app telemetry               │
 │  /playground    run tracked Groq calls                      │
-│  /demo/run-support  run realistic support demo tickets      │
+│  /demo/run-support  run 3 realistic support demo tickets    │
 │  /metrics/*     summary, timeseries, model breakdown        │
 │  /calls, /alerts persisted observability records            │
 │  /ws            live broadcast on new calls + alerts        │
@@ -124,7 +120,7 @@ Instead of treating AI calls as opaque events, PULSE turns every request into st
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | React 18, Recharts, Axios |
+| **Frontend** | React 18, React Scripts, Recharts, Axios |
 | **Backend** | FastAPI, Uvicorn, Pydantic, aiosqlite |
 | **LLM Provider** | Groq Python SDK (`groq`) |
 | **Realtime** | FastAPI WebSockets |
@@ -160,10 +156,8 @@ pulse-llmops/
 │   └── package.json
 ├── examples/
 │   └── support_bot_demo.py
-├── docs/screenshots/
 ├── .github/workflows/ci.yml
 ├── docker-compose.yml
-├── render.yaml
 └── README.md
 ```
 
@@ -172,13 +166,11 @@ pulse-llmops/
 ## 🚀 Installation
 
 ### Prerequisites
-
 - Python 3.12+
 - Node.js 18+
 - Groq API key
 
 ### Backend
-
 ```bash
 cd backend
 python -m venv venv
@@ -189,7 +181,6 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### Frontend
-
 ```bash
 cd frontend
 npm install
@@ -197,7 +188,6 @@ npm start
 ```
 
 ### Local URLs
-
 - Dashboard: `http://localhost:3000`
 - API: `http://localhost:8000`
 - Swagger: `http://localhost:8000/docs`
@@ -208,24 +198,38 @@ npm start
 ## 💻 Usage
 
 ### 1) Track external app calls
-
-Send your app telemetry to:
-
+Send your app’s call telemetry to:
 - `POST /track`
 
-### 2) Run playground prompts
-
-Use:
-
+### 2) Use integrated playground
+Run model prompts via:
 - `POST /playground`
 
 ### 3) Observe live dashboard
+Watch KPI/cards/charts/calls update automatically via:
+- polling + WebSocket events from `/ws`
 
-Watch KPI cards, charts, call logs, and alerts update automatically via polling + WebSocket events from `/ws`.
+### 4) Run one-click demo from UI
+Click **Run Demo Tickets** in the dashboard header to simulate a support workflow and track 3 fresh calls end-to-end.
 
-### 4) Run one-click demo
+---
 
-Use **Run Demo Tickets** from the dashboard to simulate a support workflow and generate tracked calls.
+## 🧪 Example App Demonstration
+
+PULSE includes a realistic external app simulator:
+- `examples/support_bot_demo.py`
+
+It:
+1. Calls Groq for support-ticket replies.
+2. Sends each call to `POST /track`.
+3. Lets you verify full ingestion in dashboard and `GET /calls`.
+
+Run:
+```powershell
+$env:GROQ_API_KEY="your_groq_key"
+$env:PULSE_URL="http://localhost:8000"
+python .\examples\support_bot_demo.py
+```
 
 ---
 
@@ -233,25 +237,25 @@ Use **Run Demo Tickets** from the dashboard to simulate a support workflow and g
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | `/health` | Health status |
-| GET | `/metrics/summary` | Aggregate KPI summary |
-| GET | `/metrics/timeseries?hours=24` | Time-bucket trend metrics |
-| GET | `/metrics/models` | Per-model aggregate metrics |
-| GET | `/calls?limit=50&offset=0` | Recent call records |
-| GET | `/calls/{call_id}` | Single call detail |
-| GET | `/alerts` | Active alerts |
-| POST | `/track` | Ingest external call telemetry |
-| POST | `/playground` | Run and track a Groq call |
-| POST | `/demo/run-support` | Execute built-in support demo |
-| WS | `/ws` | Live event stream |
+| `GET` | `/health` | Health status |
+| `GET` | `/metrics/summary` | Aggregate KPIs |
+| `GET` | `/metrics/timeseries?hours=24` | Time bucket metrics |
+| `GET` | `/metrics/models` | Per-model aggregates |
+| `GET` | `/calls?limit=50&offset=0` | Recent call records |
+| `GET` | `/calls/{call_id}` | Single call detail |
+| `GET` | `/alerts` | Active alerts |
+| `POST` | `/track` | Ingest external call telemetry |
+| `POST` | `/playground` | Run a tracked Groq call |
+| `POST` | `/demo/run-support` | Execute built-in support demo workload |
+| `WS` | `/ws` | Live event stream |
 
 ---
 
 ## ⚙️ Configuration
 
-Set values in `backend/.env`:
+Set in `backend/.env`:
 
-```env
+```bash
 GROQ_API_KEY=your_groq_api_key_here
 API_KEY=
 APP_ENV=development
@@ -281,25 +285,26 @@ npm run build
 
 ---
 
+## ☁️ Deployment
+
+- Backend (Render): use `render.yaml` at repo root and set `GROQ_API_KEY` / `API_KEY` in Render secrets.
+- Frontend (Vercel): deploy `frontend/` and set:
+  - `REACT_APP_API_URL=https://<your-render-backend>.onrender.com`
+  - `REACT_APP_WS_URL=wss://<your-render-backend>.onrender.com/ws`
+
+---
+
 ## 🔒 Security Notes
 
 - Never commit real API keys.
 - Restrict CORS origins before public deployment.
-- Replace SQLite with Postgres for multi-user production workloads.
-- Add secret rotation and managed secret storage for deployed environments.
-
----
-
-## 📜 License
-
-Licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+- Replace SQLite with Postgres for multi-user production load.
+- Add key rotation and secret storage via deployment platform secrets.
 
 ---
 
 <div align="center">
 
-Built with ❤️ by [Crasta Telvin](https://github.com/crastatelvin)
-
-⭐ Star this repo if you find it useful!
+Built for teams that want AI features with production-grade visibility.
 
 </div>
