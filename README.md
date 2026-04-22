@@ -308,3 +308,7 @@ npm run build
 Built for teams that want AI features with production-grade visibility.
 
 </div>
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE).
